@@ -1,0 +1,13 @@
+<?php
+session_start();
+include 'config.php';
+
+if(!isset($_SESSION['admin']) || !isset($_GET['id'])) {
+    header("Location: admin_login.php");
+    exit();
+}
+
+$id = $_GET['id'];
+mysqli_query($conn, "UPDATE messages SET status = 'read' WHERE id = $id");
+header("Location: view_messages.php");
+?> 

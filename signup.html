@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINIJOBS | SignUp</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section login-img1">
+      <h1><a href="home.php">MINIJOBS</a></h1>
+      <p>
+        Access your account to </BR> explore exciting job opportunities,<br> connect with top employers,<br> and manage your career journey with ease...!
+      </p>
+      <!-- <div class="login-img"></div> -->
+    
+    </div>
+    <div class="right-section">
+      <h2>Start your journey <br>with us...!</h2>
+      <p>Continue with google or enter your details</p>
+      <div class="google-btn">
+        <img src="images/google.png" alt="">
+        <button>SignUp with Google</button>
+      </div>
+      
+      <form action="signup_handler.php" method="POST">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="******" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="******" required>
+        </div>
+        <button class="btn" type="submit">Sign-up</button>
+      </form>
+      <p class="signup-link">
+        Already have an account? <a href="index.html">Just login</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
